@@ -826,7 +826,7 @@ class Files(_common.BaseModule):
 
     Args:
       path: The path or a path-like object points to the file to to be uploaded.
-      config: Optional parameters to set `diplay_name`, `mime_type`, and `name`.
+      config: Optional parameters to set `display_name`, `mime_type`, and `name`.
     """
     if self._api_client.vertexai:
       raise ValueError(
@@ -1139,7 +1139,7 @@ class AsyncFiles(_common.BaseModule):
 
     Args:
       path:  The path or a path-like object points to the file to be uploaded.
-      config: Optional parameters to set `diplay_name`, `mime_type`, and `name`.
+      config: Optional parameters to set `display_name`, `mime_type`, and `name`.
     """
     if self._api_client.vertexai:
       raise ValueError(

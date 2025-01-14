@@ -734,7 +734,7 @@ distillation_job
 ```
 
 ``` python
-tcompleted_states = set([
+completed_states = set([
     "JOB_STATE_SUCCEEDED",
     "JOB_STATE_FAILED",
     "JOB_STATE_CANCELLED",

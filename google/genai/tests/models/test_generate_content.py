@@ -396,7 +396,7 @@ def test_safety_settings_on_difference_stream(client):
 def test_pydantic_schema(client):
   class CountryInfo(BaseModel):
     name: str
-    pupulation: int
+    population: int
     capital: str
     continent: str
     gdp: int
@@ -423,7 +423,7 @@ def test_json_schema(client):
           'response_schema': {
               'required': [
                   'name',
-                  'pupulation',
+                  'population',
                   'capital',
                   'continent',
                   'gdp',
@@ -432,7 +432,7 @@ def test_json_schema(client):
               ],
               'properties': {
                   'name': {'type': 'STRING'},
-                  'pupulation': {'type': 'INTEGER'},
+                  'population': {'type': 'INTEGER'},
                   'capital': {'type': 'STRING'},
                   'continent': {'type': 'STRING'},
                   'gdp': {'type': 'INTEGER'},

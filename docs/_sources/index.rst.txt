@@ -188,7 +188,7 @@ called and responded.
 
     function_call_part = response.candidates[0].content.parts[0]
 
-    function_reponse = get_current_weather(**function_call_part.function_call.args)
+    function_response = get_current_weather(**function_call_part.function_call.args)
 
 
     function_response_part = types.Part.from_function_response(
@@ -682,7 +682,7 @@ Only supported on Vertex. Requires allowlist.
 
 .. code:: python
 
-    tcompleted_states = set([
+    completed_states = set([
         "JOB_STATE_SUCCEEDED",
         "JOB_STATE_FAILED",
         "JOB_STATE_CANCELLED",
