@@ -1603,6 +1603,12 @@ class GenerateContentConfig(_common.BaseModel):
       description="""The speech generation configuration.
       """,
   )
+  audio_timestamp: Optional[bool] = Field(
+      default=None,
+      description="""If enabled, audio timestamp will be included in the request to the
+       model.
+      """,
+  )
   automatic_function_calling: Optional[AutomaticFunctionCallingConfig] = Field(
       default=None,
       description="""The configuration for automatic function calling.
@@ -1727,6 +1733,11 @@ class GenerateContentConfigDict(TypedDict, total=False):
 
   speech_config: Optional[SpeechConfigUnionDict]
   """The speech generation configuration.
+      """
+
+  audio_timestamp: Optional[bool]
+  """If enabled, audio timestamp will be included in the request to the
+       model.
       """
 
   automatic_function_calling: Optional[AutomaticFunctionCallingConfigDict]
